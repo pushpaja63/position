@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.sticky{
+			position: sticky;
+			background-color: hotpink;
+			top: 0%;
+			left: 10%;
+			display: flex;
+			justify-content: center;
+			text-transform: uppercase;
+		}
+		.ol{
+			color: purple;
+		}
+		.property h2{
+			color:red;
+			position:absolute;
+			left: 20px;
+		}
+		.property p{
+			position: relative;
+			top: 40px;
+			
+		}
+		.image{
+			position:static;
+		}
+		.fixed{
+			
+			display: flex;
+			justify-content: center;
+			position: fixed;
+			top: 5%	;
+			right: 40%;
+			text-transform: uppercase;
+			background-color: greenyellow;
+			width: fit-content;
+		}	
+
+	</style>
+</head>
+<body>
+	
+	<h1 class="sticky">position property</h1>
+	<p class="fixed">this is all about the position property</p>
+	<ol class="ol">
+		<li>Fixed</li>
+		<li>Static</li>
+		<li>Relative</li>
+		<li>Absolute</li>
+		<li>Sticky</li>
+	</ol>
+		<p>The positioning of an element can be done using the top, right, bottom, and left properties. These specify the distance of an HTML element from the edge of the viewport. To set the position by these four properties, we have to declare the positioning method. Let’s understand each of these position methods in detail:</p>
+
+		<div class="property">
+	<h2>Fixed</h2>
+		<p>Any HTML element with position: fixed property will be positioned relative to the viewport. An element with fixed positioning allows it to remain at the same position even we scroll the page. We can set the position of the element using the top, right, bottom, left.</p>
+	<h2>Static</h2>
+		<P>This method of positioning is set by default. If we don’t mention the method of positioning for any element, the element has the position: static method by default. By defining Static, the top, right, bottom and left will not have any control over the element. The element will be positioned with the normal flow of the page.</P>
+	<h2>Relative</h2>
+		<p> An element with position: relative is positioned relatively with the other elements which are sitting at top of it. If we set its top, right, bottom, or left, other elements will not fill up the gap left by this element. An element with its position set to relative and when is adjusted using top , bottom ,left, right will be positioned relative to its original position.</p>
+	<h2>Absolute</h2>
+		<p>An element with position: absolute will be positioned with respect to its nearest Non-static ancestor. The positioning of this element does not depend upon its siblings or the elements which are at the same level.</p>
+	<h2>Sticky</h2>
+		<p> Element with position: sticky and top: 0 played a role between fixed & relative based on the position where it is placed. If the element is placed at the middle of the document then when the user scrolls the document, the sticky element starts scrolling until it touches the top. When it touches the top, it will be fixed at that place in spite of further scrolling. We can stick the element at the bottom, with the bottom property.</p>
+		<div class="image">
+		<img src="https://th.bing.com/th/id/OIP.ArEOIyD-dIi64VqBztCPMAHaFA?pid=ImgDet&rs=1"/>
+		<img src="https://th.bing.com/th/id/OIP.ArEOIyD-dIi64VqBztCPMAHaFA?pid=ImgDet&rs=1"/>
+		<img src="https://th.bing.com/th/id/OIP.ArEOIyD-dIi64VqBztCPMAHaFA?pid=ImgDet&rs=1"/>
+		<img src="https://th.bing.com/th/id/OIP.ArEOIyD-dIi64VqBztCPMAHaFA?pid=ImgDet&rs=1"/>
+		</div>
+		
+</body>
+</html>
